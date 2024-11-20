@@ -66,7 +66,7 @@
             the app. The
             <br> integrated testing features allow for a streamlined .
           </p>
-          <button class="rounded-xl bg-[#1DD100] text-[#030712] text-2xl font-bold px-8 py-6">Buy Tickets</button>
+          <button id="buy-ticket-btn" class="rounded-xl bg-[#1DD100] text-[#030712] text-2xl font-bold px-8 py-6">Buy Tickets</button>
         </div>
 
       </div>
@@ -145,8 +145,7 @@
     </section>
 
     <!-- Ph Paribahan section -->
-    <section
-      class="mt-32 max-w-[1440px] m-auto bg-[#F7F8F8] border-3xl border-4 border-t-[#1DD100] border-b-0 border-l-0 border-r-0 rounded-t-3xl">
+    <section id="ph-paribahan-section" class="mt-32 max-w-[1440px] m-auto bg-[#F7F8F8] border-3xl border-4 border-t-[#1DD100] rounded-b-3xl border-l-0 border-r-0 rounded-t-3xl">
 
       <!-- ph paribahan header division -->
       <div class="flex flex-col justify-center items-center text-center gap-6 mt-28 mb-12">
@@ -175,7 +174,7 @@
             </div>
             <!-- set left -->
             <div>
-              <button class="btn text-[#1DD100] font-inter text-xl font-semibold bg-[#1DD10026] rounded-xl">
+              <button id="seat-left" class="btn text-[#1DD100] font-inter text-xl font-semibold bg-[#1DD10026] rounded-xl">
                 <img src="src/images/seat-green.png" alt="">
                 40 Seats left
               </button>
@@ -223,18 +222,18 @@
           <div class=" flex justify-between  border-b-4 border-dashed border-t-4 py-3">
             <button class="btn text-[#03071280] font-inter text-xl font-semibold bg-white border-none"><img
                 src="src/images/seat-gray.png" alt="">Available</button>
-            <button class="btn text-[#1DD100] font-inter text-xl font-semibold bg-white border-none"><img
+            <button  id="selected" class="btn font-inter text-xl font-semibold bg-white border-none"><img
                 src="src/images/seat-green-filled.png" alt="">Selected</button>
           </div>
           <!-- seat number division -->
-          <div>
+          <div id="seat-container">
             <div class="flex justify-between  gap-8">
               <div></div>
               <div><button class="btn mt-10 mb-10 w-28 h-14 rou"><img src="src/images/tabler-icon-steering-wheel.png"
                     alt=""></button></div>
             </div>
 
-            <div class="flex justify-between ">
+            <div class="flex justify-between seat-container">
               <!-- line number -1 -->
               <div class=" flex flex-col gap-8">
                 <p class="pt-4 text-inter text-[#03071280] text-xl font-semibold h-14 rounded-xl">A</p>
@@ -320,13 +319,13 @@
           <!-- Seat class Price -->
           <div class="bg-[#F7F8F8] mt-6 p-8 w-[433px] rounded-xl">
             <div class="flex justify-between pb-4">
-              <p class="text-[#030712] font-inter font-semibold text-lg">Seat</p>
+              <p id="seat" class="text-[#030712] font-inter font-semibold text-lg">Seat</p>
               <p class="text-[#030712] font-inter font-semibold text-lg">Class</p>
               <p class="text-[#030712] font-inter font-semibold text-lg">Price</p>
             </div>
             <div class="border-b-4 border-t-4 border-dashed">
               <div class="flex justify-between py-4">
-                <p class="text-[#03071280] font-inter text-lg">C2</p>
+                <p id="seat-economy" class="text-[#03071280] font-inter text-lg">C2</p>
                 <p class="text-[#03071280] font-inter text-lg">Economy</p>
                 <p class="text-[#03071280] font-inter text-lg">550</p>
               </div>
@@ -374,7 +373,7 @@
     </section>
 
     <!-- Success Full ticket message section -->
-     <section class="font-roboto flex flex-col justify-center items-center space-y-8 text-center mt-14 hidden">
+     <section class="font-roboto flex flex-col justify-center items-center space-y-8 text-center mt-14 mb-10 hidden">
       <img src="src/images/success.png" alt="">
       <h5 class="text-[#27AE60] text-3xl font-semibold">SUCCESS</h5>
       <h6 class="text-[#4A4A4A] font-semibold text-xl">Thank you for Booking Our Bus Seats. <br>
@@ -387,8 +386,8 @@
 
 
   <!-- footer section -->
-  <footer class="bg-[#030712]">
-   <div class="max-w-[1440px] font-raleway m-auto">
+  <footer class="bg-[#030712] mt-14">
+   <div class="max-w-[1170px] font-raleway m-auto">
 <div class="flex flex-col lg:flex-row gap-10 justify-between items-center pt-32 pb-12 border-b-2 border-dashed border-[#FFFFFF4C]">
   <div class=" space-y-5">
     <h2 class="text-white text-4xl font-extrabold">P-Ticket</h2>
