@@ -1,12 +1,63 @@
 /* google font Inter and Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.font-inter{
+.font-inter {
         font-family: "Inter", sans-serif;
 }
-.font-raleway{
+
+.font-raleway {
         font-family: "Raleway", sans-serif;
 }
-.font-roboto{
-        font-family: "Roboto", sans-serif;  
+
+.font-roboto {
+        font-family: "Roboto", sans-serif;
 }
+
+/* text-inter text-[#03071280] text-xl font-semibold h-14 rounded-xl */
+
+.seat {
+        font-family: "Inter";
+        height: 3.5rem;
+        color: #03071280;
+        font-size: 20px;
+        border-radius: 0.75rem;
+        font-weight: 600;
+}
+
+.economy {
+        color: #03071280;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: large;
+        padding-left: 30px;
+}
+
+.economy-seat {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        width: 430px;
+}
+
+
+.seat-number.selected {
+        background-color: #1DD100;
+        color: white;
+}
+
+.seat-number:disabled {
+        background-color: #f7f8f8;
+        cursor: not-allowed;
+}
+
+#coupon-input:disabled {
+        background-color: #f7f8f8;
+        cursor: not-allowed;
+}
+
+#apply-btn:disabled {
+        background-color: #f7f8f8;
+        cursor: not-allowed;
+}
+
+ 
